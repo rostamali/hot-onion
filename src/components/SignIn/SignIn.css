@@ -1,0 +1,51 @@
+.form-logo{
+    height: 60px;
+    margin-bottom: 20px;
+}
+.form-input-group,
+.form-btn-group{
+    margin: 18px 0;
+    width: 380px;
+}
+.form-input-group input{
+    background-color: #F5F5F5;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+.form-input-group input:focus{
+    outline: none;
+}
+.form-btn-group input{
+    border: none;
+    width: 100%;
+    background-color: #F91944;
+    font-size: 16px;
+    color: #FFF;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.alert-message{
+    font-size: 15px;
+    color: #F91944;
+    font-weight: 500;
+    text-decoration: none;
+}
+.alert-message:hover{
+    color: #F91944;
+}
+button.social-login-icon {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    background-color: #F91944;
+    border-radius: 30px;
+    margin: 8px 4px;
+}
+button.social-login-icon  ion-icon{
+    font-size: 22px;
+    color: #FFF;
+}

@@ -1,0 +1,130 @@
+.breakfast-section-wrapper,
+.dinner-section-wrapper,
+.lunch-section-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.single-product-wrapper {
+    text-align: center;
+    padding: 20px 8px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    position: relative;
+}
+.single-product-wrapper:hover{
+    box-shadow: 0px 0px 30px #a7a7a73d;
+    overflow: hidden;
+}
+/* overly */
+.overly {
+    position: absolute;
+    background-color: #0500004d;
+    height: 0%;
+    bottom: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    transform-origin: top;
+    transition: all 0.4s ease;
+    padding: 0 10px;
+}
+.single-product-wrapper:hover .overly{
+    height: 20%;
+    opacity: 1;
+}
+.overly-btn-wrapper {
+    text-align: left;
+}
+.single-product-wrapper:hover .btn-animation-1{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: bounceTop 0.3s  ease 0.1s;
+}
+.single-product-wrapper:hover .btn-animation-2{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: bounceTop 0.4s  ease 0.3s;
+}
+.single-product-wrapper:hover .btn-animation-3{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: bounceTop 0.4s  ease 0.6s;
+}
+@keyframes bounceTop {
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateY(-13px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.btn-overly{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 4px 3px;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 48px;
+    position: relative;
+}
+.btn-overly ion-icon{
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+    --ionicon-stroke-width: 42px;
+}
+.btn-overly:hover ion-icon{
+    --ionicon-stroke-width: 50px;
+    color: #FFF;
+}
+.btn-overly::before, .btn-overly::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+}
+.btn-overly::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 0px #F91944;
+}
+.btn-overly:hover::before {
+    box-shadow: inset 0 0 0 60px #F91944;
+}
+.btn-overly:hover{
+    border-color: #F91944;
+}
+/* end overly */
+
+img.product-thumbnail {
+    width: 60%;
+}
+h3.product-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0 10px 0;
+}
+p.product-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #979191d1;
+}
+p.product-price {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 4px 0;
+}

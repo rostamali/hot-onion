@@ -1,0 +1,33 @@
+div#filter-section {
+    padding: 60px 0px;
+}
+.btn-filter{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    background-color: transparent;
+    border:none;
+    margin: 6px 8px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+#filter-section .nav-tabs{
+    justify-content: center;
+    border: none;
+}
+#filter-section .tab-content{
+    margin-top: 30px;
+}
+#filter-section .nav-tabs button.nav-link{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0;
+    margin: 4px 10px;
+}
+#filter-section .nav-tabs button.nav-link.active{
+    color: #F91944;
+    border-bottom: 2px solid #F91944;
+}

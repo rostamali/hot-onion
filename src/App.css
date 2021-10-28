@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+
+.mb-sm{
+  margin-bottom: 5px;
+}
+.mb-md{
+  margin-bottom: 10px;
+}
+.mb-lg{
+  margin-bottom: 12px;
+}
+.mb-xxl{
+  margin-bottom: 20px;
+}
