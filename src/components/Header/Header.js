@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import headerLogo from '../../images/logo2.png';
+import { AuthContext } from '../MainSection/MainSection';
 import './Header.css';
 
 const Header = () => {
 
-    
+    const {cart, wishList} = useContext(AuthContext);
+    // cart counter
+    let cartCounter = 0;
+    for(const cartItem of cart){
+        cartCounter = cartItem['qty'] + cartCounter;
+    }
+
+    // wishlist
+    let wishListCounter = 0;
+    for(const wishListItem of wishList){
+        wishListCounter = wishListItem['qty'] + wishListCounter;
+    }
 
     return (
         <>
@@ -22,13 +34,13 @@ const Header = () => {
                             <NavLink to="/home" className="menu-link">
                                 <span className="heart-icon">
                                     <ion-icon name="heart-outline"></ion-icon>
-                                    <span className="wishlist-count">8</span>
+                                    <span className="wishlist-count">{wishListCounter}</span>
                                 </span>
                             </NavLink>
                             <NavLink to="/cart" className="menu-link">
                                 <span className="cart-icon">
                                     <ion-icon name="cart-outline" ></ion-icon>
-                                    <span className="cart-count">0</span>
+                                    <span className="cart-count">{cartCounter}</span>
                                 </span>
                             </NavLink>
                             <NavLink to="/SignInSignUp" className="menu-link">Login</NavLink>

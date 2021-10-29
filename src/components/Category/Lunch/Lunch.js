@@ -14,7 +14,7 @@ const Lunch = (props) => {
             <div className="overly">
                 <div className="overly-btn-wrapper">
                     <button onClick={() => props.handleAddToCart(props.product)} className="btn-overly btn-animation-1"><ion-icon name="cart-outline"></ion-icon></button>
-                    <button className="btn-overly btn-animation-2"><ion-icon name="heart-outline"></ion-icon></button>
+                    <button onClick={() => props.handleWishList(props.product)} className="btn-overly btn-animation-2"><ion-icon name="heart-outline"></ion-icon></button>
                     <button className="btn-overly btn-animation-3"><ion-icon name="eye-outline"></ion-icon></button>
                 </div>
             </div>
