@@ -1,0 +1,25 @@
+#footer-section{
+    background-color: #191919;
+    padding: 80px 0 60px 0;
+}
+img.footer-thumbnail {
+    max-width: 18%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.copy-right-text{
+    color: #7D7D7D;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-menu-link:link,
+.footer-menu-link:visited{
+    color: #F7F7F7;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.footer-menu-link:hover,
+.footer-menu-link:active{
+    color: #F91944;
+}

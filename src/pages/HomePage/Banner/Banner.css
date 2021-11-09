@@ -1,0 +1,53 @@
+#banner-section{
+    background-image: url(../../../images/bannerbackground.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #FCF4E0;
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 50px;
+    font-weight: 400;
+}
+.banner-search-input-group {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+
+    position: relative;
+}
+.search-form{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    background-color: #fff;
+    line-height: 1.5;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #333;
+}
+.search-form:focus{
+    outline: none;
+}
+.search-btn-wrapper {
+    position: absolute;
+    right: 0;
+}
+.btn-regular{
+    font-size: 16px;
+    color: #FFF;
+    background-color: #F91944;
+    border: none;
+    cursor: pointer;
+    padding: 12px 35px;
+    line-height: 1.5;
+    border-radius: 25px;
+}
